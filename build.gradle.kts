@@ -4,10 +4,6 @@ plugins {
     application
 }
 
-viaductApplication {
-    modulePackagePrefix.set("com.example.viadapp")
-}
-
 dependencies {
     implementation(libs.viaduct.api)
     implementation(libs.viaduct.runtime)
@@ -29,8 +25,6 @@ dependencies {
     implementation(libs.jetty.server)
     implementation(libs.jetty.servlet)
     implementation(libs.jakarta.servlet.api)
-
-    implementation(project(":resolvers"))
 
     // Test dependencies
     testImplementation(libs.junit.jupiter)
